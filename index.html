@@ -1,393 +1,370 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Bhavana Ramkumar | Software Engineer Portfolio</title>
-
-    <!-- Normalize CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-          rel="stylesheet">
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-          rel="stylesheet">
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet"
-          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-          crossorigin="anonymous">
-
-    <!-- Your Styles -->
-    <link href="styles.css" rel="stylesheet">
+    <title>Bhavana Ramkumar | Computer Science Student</title>
 
     <meta name="description"
-          content="Bhavana Ramkumar - Computer Science undergraduate and software engineering enthusiast at PES University.">
+          content="Bhavana Ramkumar — Computer Science student at PES University building software systems, distributed applications and AI-powered solutions.">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap"
+          rel="stylesheet">
+
+    <link href="styles.css" rel="stylesheet">
 </head>
 
 <body>
 
-<header class="primary">
-    <div class="wrapper">
+<header>
+    <div class="nav-wrapper">
+        <a href="#home" class="brand">Bhavana Ramkumar<span>.</span></a>
 
-        <div class="logo-container">
-            <h1>Bhavana<br>Ramkumar</h1>
-        </div>
-
-        <nav id="mainnav">
-            <ul>
-                <li><a href="#work">Projects</a></li>
-                <li><a href="#about-contact">About</a></li>
-                <li><a href="#about-contact">Contact</a></li>
-            </ul>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
         </nav>
-
     </div>
 </header>
 
+<main>
 
-<!-- =========================================================
-     WORK / PROJECTS
-========================================================= -->
+    <!-- ================= HERO ================= -->
 
-<section id="work">
-    <div class="wrapper">
+    <section id="home" class="hero">
 
-        <h2>Featured Projects</h2>
+        <div class="hero-content">
+
+            <p class="eyebrow">COMPUTER SCIENCE · PES UNIVERSITY</p>
+
+            <h1>
+                Computer Science<br>
+                Student<span>.</span>
+            </h1>
+
+            <p class="hero-description">
+                Computer Science student at PES University with a passion for
+                technology and continuous learning. I enjoy solving real-world
+                problems through clean, efficient, and impactful code, with
+                strengths in analytical thinking, technical implementation,
+                and collaborative teamwork.
+            </p>
+
+            <a href="#projects" class="project-button">
+                <span>View My Projects</span>
+                <span class="arrow">↗</span>
+            </a>
+
+        </div>
+
+        <!-- Subtle technical decoration; no image required -->
+        <div class="hero-visual" aria-hidden="true">
+            <div class="orbit orbit-one"></div>
+            <div class="orbit orbit-two"></div>
+
+            <div class="system-box">
+                <span>01</span>
+                <div class="system-line"></div>
+                <span>BUILD</span>
+            </div>
+
+            <div class="floating-code">&lt;/&gt;</div>
+        </div>
+
+        <div class="scroll-indicator">
+            Scroll Down <span>↓</span>
+        </div>
+
+    </section>
+
+
+    <!-- ================= PROJECTS ================= -->
+
+    <section id="projects" class="projects-section">
+
+        <div class="section-heading">
+            <span class="section-number">01</span>
+
+            <div>
+                <p class="section-label">SELECTED WORK</p>
+                <h2>Projects</h2>
+            </div>
+        </div>
+
 
         <!-- FEATURED PROJECT -->
 
-        <section class="featured">
+        <article class="featured-project">
 
-            <article>
-                <h3>Voice-to-SQL Inventory Management System</h3>
+            <div class="project-number">01</div>
 
-                <h4>Natural Language Inventory Management for Kirana Stores</h4>
+            <div class="project-main">
 
-                <p>
-                    A full-stack inventory management system that allows shopkeepers
-                    to update inventory using natural language voice or text commands
-                    in Hinglish and Tanglish.
-                </p>
+                <p class="project-type">FULL-STACK · NLP · LLM</p>
 
-                <p>
-                    The system combines speech recognition, rule-based intent
-                    extraction, RAG-based SQL generation and SQL validation to
-                    convert natural language commands such as
-                    <strong>"50 kg atta add karo"</strong> into safe database
-                    operations.
-                </p>
+                <h3>Voice → SQL</h3>
+
+                <h4>Inventory Management System</h4>
 
                 <p>
-                    Built with React, Vite, FastAPI, SQLite, FAISS, RAG,
-                    Sarvam ASR, Groq LLaMA and Ollama. The platform also provides
-                    sales analytics, demand forecasting, customer behaviour
-                    insights and product recommendations.
+                    A natural-language inventory management system designed for
+                    Kirana shopkeepers. Users can update inventory using voice
+                    or text commands in Hinglish and Tanglish.
                 </p>
 
-                <p>
-                    <strong>Tech:</strong>
-                    React · Vite · FastAPI · Python · SQLite · FAISS · RAG ·
-                    LLMs · REST APIs
-                </p>
+                <div class="tech-stack">
+                    <span>React</span>
+                    <span>FastAPI</span>
+                    <span>RAG</span>
+                    <span>FAISS</span>
+                    <span>SQLite</span>
+                    <span>LLMs</span>
+                </div>
 
-                <p>
-                    <a href="#">View Project</a>
-                </p>
-            </article>
+                <a href="#" class="project-link">
+                    View Project <span>↗</span>
+                </a>
 
-        </section>
-
-
-        <!-- ADDITIONAL PROJECTS -->
-
-        <section class="projects">
-
-            <article>
-                <h3>Distributed Image Processing System</h3>
-
-                <p>
-                    <strong>Role:</strong> Backend / Distributed Systems
-                </p>
-
-                <p>
-                    Built a distributed image processing system using Apache Kafka
-                    where a master node divides images into tiles and distributes
-                    processing tasks across worker nodes.
-                </p>
-
-                <p>
-                    Workers process image segments in parallel and the master
-                    reconstructs the final image. Kafka provides asynchronous
-                    communication and enables the system to handle processing
-                    workloads independently across nodes.
-                </p>
-
-                <p>
-                    <strong>Tech:</strong>
-                    Apache Kafka · Python · OpenCV · Docker · Distributed Systems
-                </p>
-
-                <p>
-                    <a href="#">View Project</a>
-                </p>
-            </article>
-
-
-            <article>
-                <h3>Motor Fault Detection using Deep Learning</h3>
-
-                <p>
-                    <strong>Role:</strong> Machine Learning / Computer Vision
-                </p>
-
-                <p>
-                    Developed a CNN-based fault classification system using
-                    ResNet50 to identify five different types of motor and circuit
-                    faults from images.
-                </p>
-
-                <p>
-                    Used synthetic image generation, image augmentation and
-                    Grad-CAM to understand which regions influenced the model's
-                    predictions.
-                </p>
-
-                <p>
-                    <strong>Tech:</strong>
-                    Python · PyTorch · ResNet50 · OpenCV · Grad-CAM ·
-                    Albumentations
-                </p>
-
-                <p>
-                    <a href="#">View Project</a>
-                </p>
-            </article>
-
-
-            <article>
-                <h3>Multi-Agent Kanglish Dataset Generation</h3>
-
-                <p>
-                    <strong>Role:</strong> Research Intern
-                </p>
-
-                <p>
-                    Developed a multi-agent framework for generating synthetic
-                    Kannada-English (Kanglish) text data.
-                </p>
-
-                <p>
-                    The system used specialized agents for word-bank generation,
-                    template generation, validation and quality monitoring to
-                    produce over 10,000 synthetic Kanglish sentences.
-                </p>
-
-                <p>
-                    Achieved BLEU 59.67, chrF++ 83.35 and an average CMI of
-                    28.79 during dataset evaluation.
-                </p>
-
-                <p>
-                    <strong>Tech:</strong>
-                    Python · NLP · LLMs · Multi-Agent Systems ·
-                    Data Generation
-                </p>
-
-                <p>
-                    <a href="#">View Project</a>
-                </p>
-            </article>
-
-
-            <article>
-                <h3>Data Analytics & Demand Forecasting</h3>
-
-                <p>
-                    <strong>Role:</strong> Data Analysis / Machine Learning
-                </p>
-
-                <p>
-                    Worked with structured datasets to perform data cleaning,
-                    exploratory analysis, trend identification and forecasting.
-                </p>
-
-                <p>
-                    Implemented Exponential Moving Average based demand
-                    forecasting and explored time-series approaches including
-                    ARIMA and differencing.
-                </p>
-
-                <p>
-                    <strong>Tech:</strong>
-                    Python · Pandas · NumPy · Scikit-learn ·
-                    ARIMA · Data Analysis
-                </p>
-
-                <p>
-                    <a href="#">View Project</a>
-                </p>
-            </article>
-
-        </section>
-
-    </div>
-</section>
-
-
-<!-- =========================================================
-     ABOUT + CONTACT
-========================================================= -->
-
-<section id="about-contact" class="secondary">
-
-    <div class="wrapper">
-
-        <article>
-
-            <h2>About Me</h2>
-
-            <p>
-                I am a Computer Science undergraduate at
-                <strong>PES University, Bengaluru</strong>, with a strong interest
-                in software engineering, backend systems, distributed systems and
-                applied AI.
-            </p>
-
-            <p>
-                I enjoy building systems that combine practical software
-                engineering with technologies such as APIs, databases, Kafka,
-                Docker, NLP and machine learning.
-            </p>
-
-            <p>
-                I am currently pursuing my BTech in Computer Science and
-                Engineering with a <strong>9.01/10 CGPA</strong>.
-            </p>
-
-
-            <h3>Skills</h3>
-
-            <p>
-                <strong>Programming:</strong><br>
-                C · C++ · Python · JavaScript · SQL
-            </p>
-
-            <p>
-                <strong>Web & Backend:</strong><br>
-                React · Vite · FastAPI · Flask · REST APIs · HTML · CSS
-            </p>
-
-            <p>
-                <strong>Databases:</strong><br>
-                MySQL · SQLite · MongoDB · Redis
-            </p>
-
-            <p>
-                <strong>Distributed Systems & Tools:</strong><br>
-                Apache Kafka · Docker · Git · GitHub · Jira
-            </p>
-
-            <p>
-                <strong>AI / Data:</strong><br>
-                PyTorch · OpenCV · NLP · LLMs · RAG · FAISS ·
-                Scikit-learn · Pandas · NumPy
-            </p>
-
+            </div>
         </article>
 
 
-        <article>
+        <!-- OTHER PROJECTS -->
 
-            <h2>Experience</h2>
+        <div class="project-grid">
 
-            <h3>Research Intern</h3>
+            <article class="project-card">
+                <div class="card-top">
+                    <span>02</span>
+                    <span>BACKEND / DISTRIBUTED</span>
+                </div>
 
-            <p>
-                <strong>CCBD & CDSAML, PES University</strong><br>
-                June 2025 – July 2025
-            </p>
+                <h3>Distributed Image Processing</h3>
 
-            <p>
-                Worked on a multi-agent framework for synthetic Kannada-English
-                dataset generation. Designed agent-based components for word-bank
-                creation, template generation, validation and quality monitoring.
-            </p>
+                <p>
+                    Kafka-based asynchronous image processing system where a
+                    master node distributes image tiles across worker nodes
+                    for parallel processing.
+                </p>
 
-            <p>
-                Generated 10,000+ Kanglish sentences and evaluated the dataset
-                using BLEU, chrF++ and Code-Mixing Index metrics.
-            </p>
+                <div class="tech-stack">
+                    <span>Kafka</span>
+                    <span>OpenCV</span>
+                    <span>Python</span>
+                    <span>Docker</span>
+                </div>
 
-
-            <h3>Interests</h3>
-
-            <p>
-                Software Engineering · Backend Development ·
-                Distributed Systems · Cloud Computing ·
-                Big Data · NLP · Machine Learning
-            </p>
-
-        </article>
-
-
-        <article>
-
-            <h2>Contact Me</h2>
-
-            <p>
-                I am interested in software engineering opportunities,
-                internships and projects involving backend development,
-                distributed systems and applied AI.
-            </p>
-
-            <p>
-                <i class="fa fa-envelope" aria-hidden="true"></i>
-                <a href="mailto:YOUR_EMAIL@gmail.com">
-                    YOUR_EMAIL@gmail.com
+                <a href="#" class="project-link">
+                    View Project <span>↗</span>
                 </a>
-            </p>
+            </article>
 
-            <p class="social">
 
-                <!-- Replace # with your actual profiles -->
+            <article class="project-card">
+                <div class="card-top">
+                    <span>03</span>
+                    <span>COMPUTER VISION</span>
+                </div>
 
-                <a href="#" aria-label="LinkedIn">
-                    <i class="fab fa-linkedin"></i>
+                <h3>Motor Fault Detection</h3>
+
+                <p>
+                    CNN-based fault classification system using ResNet50 to
+                    identify multiple motor and circuit fault categories
+                    from images.
+                </p>
+
+                <div class="tech-stack">
+                    <span>PyTorch</span>
+                    <span>ResNet50</span>
+                    <span>OpenCV</span>
+                    <span>Grad-CAM</span>
+                </div>
+
+                <a href="#" class="project-link">
+                    View Project <span>↗</span>
                 </a>
+            </article>
 
-                <a href="#" aria-label="GitHub">
-                    <i class="fab fa-github"></i>
+
+            <article class="project-card">
+                <div class="card-top">
+                    <span>04</span>
+                    <span>NLP · MULTI-AGENT</span>
+                </div>
+
+                <h3>Kanglish Dataset Generation</h3>
+
+                <p>
+                    Multi-agent framework for generating and validating
+                    synthetic Kannada-English sentences, producing 10,000+
+                    sentences for NLP research.
+                </p>
+
+                <div class="tech-stack">
+                    <span>Python</span>
+                    <span>NLP</span>
+                    <span>LLMs</span>
+                    <span>Agents</span>
+                </div>
+
+                <a href="#" class="project-link">
+                    View Project <span>↗</span>
                 </a>
-
-            </p>
-
-        </article>
-
-    </div>
-
-</section>
+            </article>
 
 
-<!-- =========================================================
-     FOOTER
-========================================================= -->
+            <article class="project-card">
+                <div class="card-top">
+                    <span>05</span>
+                    <span>DATA · FORECASTING</span>
+                </div>
 
-<footer class="primary">
+                <h3>Demand Forecasting & Analytics</h3>
 
-    <div class="wrapper">
+                <p>
+                    Customer-centric demand forecasting and analytics using
+                    sales trends, purchase frequency and time-series
+                    techniques.
+                </p>
 
-        <p class="centered">
-            &copy; 2026 Bhavana Ramkumar. All rights reserved.
-        </p>
+                <div class="tech-stack">
+                    <span>Python</span>
+                    <span>Pandas</span>
+                    <span>ARIMA</span>
+                    <span>EDA</span>
+                </div>
 
-    </div>
+                <a href="#" class="project-link">
+                    View Project <span>↗</span>
+                </a>
+            </article>
 
+        </div>
+
+    </section>
+
+
+    <!-- ================= ABOUT ================= -->
+
+    <section id="about" class="about-section">
+
+        <div class="section-heading">
+            <span class="section-number">02</span>
+
+            <div>
+                <p class="section-label">WHO I AM</p>
+                <h2>About Me</h2>
+            </div>
+        </div>
+
+
+        <div class="about-grid">
+
+            <div class="about-intro">
+
+                <p class="large-text">
+                    I'm a Computer Science undergraduate at
+                    <strong>PES University</strong>, Bengaluru, interested in
+                    building reliable software systems and applying AI to
+                    practical problems.
+                </p>
+
+                <p>
+                    My projects span backend development, distributed systems,
+                    NLP, computer vision and data analytics. I particularly
+                    enjoy understanding how individual components come together
+                    to form a complete system.
+                </p>
+
+            </div>
+
+
+            <div class="about-details">
+
+                <div class="detail-block">
+                    <span>EDUCATION</span>
+
+                    <h3>B.Tech Computer Science</h3>
+
+                    <p>
+                        PES University<br>
+                        Bengaluru · 2023 — 2027<br>
+                        CGPA: 8.91 / 10
+                    </p>
+                </div>
+
+
+                <div class="detail-block">
+                    <span>EXPERIENCE</span>
+
+                    <h3>Research Intern</h3>
+
+                    <p>
+                        CCBD & CDSAML<br>
+                        PES University<br>
+                        June — July 2025
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="skills">
+            <span>C++</span>
+            <span>Python</span>
+            <span>JavaScript</span>
+            <span>React</span>
+            <span>FastAPI</span>
+            <span>Kafka</span>
+            <span>Docker</span>
+            <span>SQL</span>
+            <span>MongoDB</span>
+            <span>Redis</span>
+            <span>PyTorch</span>
+            <span>OpenCV</span>
+            <span>RAG</span>
+            <span>LLMs</span>
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTACT ================= -->
+
+    <section id="contact" class="contact-section">
+
+        <p class="section-label">03 / GET IN TOUCH</p>
+
+        <h2>
+            Let's build<br>
+            something useful<span>.</span>
+        </h2>
+
+        <!-- Replace these placeholders with your actual links -->
+        <a href="mailto:bhavanaramkumar82@gmail.com@gmail.com" class="contact-link">
+            bhavanaramkumar82@gmail.com@gmail.com ↗
+        </a>
+
+        <div class="social-links">
+            <a href="#https://github.com/bhavana2904">GitHub</a>
+            <a href="#">LinkedIn</a>
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+    <span>BHAVANA RAMKUMAR</span>
 </footer>
 
 </body>
